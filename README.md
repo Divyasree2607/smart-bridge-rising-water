@@ -1,399 +1,137 @@
-# 🌊 Smart Bridge – Rising Waters
-### Machine Learning Based Flood Prediction System
+# 🌊 Smart Bridge Rising Water Prediction System
 
-A web-based Flood Risk Prediction System developed using **Machine Learning**, **Flask**, and **Bootstrap**. The application predicts flood risk based on various environmental, climatic, infrastructural, and human-related factors and provides safety recommendations based on the predicted flood probability.
+## 📖 Project Overview
 
----
-
-## 🚀 Live Demo
-
-🔗 **Live Website:**  
-
-https://smart-bridge-rising-waters-project.onrender.com/
-
+The **Smart Bridge Rising Water Prediction System** is a Machine Learning-based web application developed to predict rising water levels and identify potential flood conditions. The system helps provide early warnings by analyzing input parameters and generating predictions, making it useful for disaster preparedness and bridge safety monitoring.
 
 ---
 
-## 📌 Project Overview
+## 🎯 Objective
 
-Floods are among the most devastating natural disasters, causing significant damage to life and property. This project leverages Machine Learning to estimate flood probability using multiple contributing factors.
-
-The application allows users to:
-
-- Enter environmental and climatic conditions.
-- Predict flood probability using a trained ML model.
-- View the flood risk level.
-- Receive safety recommendations.
-- Experience an interactive and user-friendly interface.
+The objective of this project is to:
+- Predict the possibility of rising water levels.
+- Assist in early flood detection.
+- Improve public safety by providing quick predictions.
+- Demonstrate the use of Machine Learning in real-world applications.
 
 ---
 
 ## ✨ Features
 
-- 🌧 Flood Probability Prediction
-- 🤖 Machine Learning Model Integration
-- 🌍 Environmental Risk Assessment
-- 🏗 Infrastructure Risk Analysis
-- 👥 Human Impact Assessment
-- 🎨 Modern Responsive UI
-- 📊 Probability-Based Risk Classification
-- 🟢 Low Risk Detection
-- 🟡 Moderate Risk Detection
-- 🔴 High Risk Detection
-- 📋 Dynamic Safety Recommendations
-- 🌐 Live Web Deployment using Render
+- Predicts rising water levels using a trained Machine Learning model.
+- User-friendly web interface.
+- Instant prediction results.
+- Lightweight and easy to deploy.
+- Built using Python and Flask.
 
 ---
 
 ## 🛠 Technologies Used
 
-### Frontend
-
-- HTML5
-- CSS3
-- Bootstrap 5
-- Bootstrap Icons
-
-### Backend
-
 - Python
 - Flask
-
-### Machine Learning
-
+- HTML5
+- CSS3
 - Scikit-learn
-- XGBoost
-- Pandas
-- NumPy
-- Joblib
-
-### Deployment
-
-- GitHub
-- Render
+- Pickle
+- Git & GitHub
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Smart-Bridge-Rising-Waters-Project/
+smart-bridge-rising-water/
 │
 ├── app.py
 ├── Flood_Prediction_Model.pkl
-├── requirements.txt
 ├── Procfile
+├── requirements.txt
 ├── runtime.txt
-│
-├── static/
-│   ├── css/
-│   │    └── style.css
-│   └── images/
-│
-├── templates/
-│   ├── home.html
-│   ├── predict.html
-│   └── result.html
-│
+├── home.html
+├── predict.html
+├── result.html
+├── style.css
+├── Flood_Prediction_Dataset_Compressed.zip
 └── README.md
 ```
 
 ---
 
-## 📊 Input Parameters
-
-The prediction model considers the following factors:
-
-- Monsoon Intensity
-- Topography Drainage
-- River Management
-- Deforestation
-- Urbanization
-- Climate Change
-- Dam Quality
-- Siltation
-- Agricultural Practices
-- Encroachments
-- Disaster Preparedness
-- Drainage Systems
-- Coastal Vulnerability
-- Landslides
-- Watershed Condition
-- Infrastructure Condition
-- Population Density
-- Wetland Loss
-- Planning Quality
-- Political Factors
-
----
-
-## 🎯 Prediction Output
-
-The application predicts:
-
-- Flood Probability (%)
-- Risk Level
-  - 🟢 Low Risk
-  - 🟡 Moderate Risk
-  - 🔴 High Risk
-- Safety Recommendations
-
----
-
-## 📷 Screenshots
-
-### 🏠 Home Page
-
-(<img width="1877" height="898" alt="Screenshot 2026-07-07 110734" src="https://github.com/user-attachments/assets/e4cdc5de-b5a9-45a4-82bf-95d4fafcde16" />
-)
-
----
-
-### 📋 Prediction Form
-
-(<img width="1748" height="833" alt="Screenshot 2026-07-06 210517" src="https://github.com/user-attachments/assets/80787e3f-cf28-4f4b-90b8-28ee2d9bb5b6" />
-)
-
----
-
-### 📊 Prediction Result
-
-(<img width="1860" height="897" alt="Screenshot 2026-07-06 230819" src="https://github.com/user-attachments/assets/82c76773-b71b-40c2-87ab-ae99376816ab" />
-)
-
----
-
 ## ⚙ Installation
 
-Clone the repository
+### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Divyasree2607/Smart-Bridge-Rising-Waters-Project.git
+git clone https://github.com/Divyasree2607/smart-bridge-rising-water.git
 ```
 
-Navigate into the project
+### Step 2: Navigate to the Project Folder
 
 ```bash
-cd Smart-Bridge-Rising-Waters-Project
+cd smart-bridge-rising-water
 ```
 
-Install dependencies
+### Step 3: Install Required Packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+### Step 4: Run the Application
 
 ```bash
 python app.py
 ```
 
-Open in browser
+---
 
-```
-http://127.0.0.1:5000
-```
+## 🚀 Usage
+
+1. Open the application in your web browser.
+2. Enter the required input values.
+3. Click the **Predict** button.
+4. View the predicted rising water level result.
 
 ---
 
-## 🌍 Future Improvements
+## 📊 Machine Learning Model
 
-- Live Weather API Integration
-- Real-Time Rainfall Monitoring
-- Interactive Flood Risk Maps
-- User Authentication
-- Historical Flood Data Visualization
-- Mobile Application
-- SMS & Email Alerts
-- Satellite Image Integration
-- AI-Based Early Warning System
+The prediction model is trained using historical flood-related data and saved as:
+
+```
+Flood_Prediction_Model.pkl
+```
+
+The Flask application loads this model to generate predictions based on user input.
 
 ---
 
-## 👨‍💻 Developed By
+## 📈 Future Enhancements
 
-** Hemadri Divyasree**
+- IoT sensor integration
+- Live weather data integration
+- SMS and Email alerts
+- Interactive dashboard
+- Cloud deployment
+- Mobile application support
+
+---
+
+## 👩‍💻 Author
+
+**Divya Sree Hemadri**
 
 B.Tech – Artificial Intelligence & Machine Learning
 
-SmartBridge Internship Project
+Annamacharya Institute of Technology and Sciences, Tirupati
+
+GitHub: https://github.com/Divyasree2607
+
+LinkedIn: https://www.linkedin.com/in/divya-sree-hemadri-a5988732a
 
 ---
 
-## 📄 License
+## 📜 License
 
-This project is developed for educational and internship purposes.
-
----
-
-## ⭐ If you found this project useful
-
-Give this repository a ⭐ on GitHub!
-#### 📌 Repository
-
-```markdown
-## 📌 Repository
-
-GitHub Repository:
-https://github.com/Divyasree2607/Smart-Bridge-Rising-Waters-Project
-```
-
----
-
-#### 📖 About the Project
-
-```markdown
-## 📖 About the Project
-
-Smart Bridge – Rising Waters is a Machine Learning-based flood prediction web application developed as an educational internship project. The system analyzes various environmental, climatic, infrastructural, and human-related factors to estimate flood probability and classify the risk level. It provides users with actionable safety recommendations through a simple and responsive web interface built with Flask and Bootstrap.
-```
-
----
-
-#### 🧠 Machine Learning Workflow
-
-```markdown
-## 🧠 Machine Learning Workflow
-
-Dataset
-      ↓
-Data Preprocessing
-      ↓
-Feature Engineering
-      ↓
-Model Training (XGBoost)
-      ↓
-Model Evaluation
-      ↓
-Model Serialization (.pkl)
-      ↓
-Flask Web Application
-      ↓
-Flood Risk Prediction
-```
-
----
-
-#### 🎯 Objectives
-
-```markdown
-## 🎯 Objectives
-
-- Predict flood probability using Machine Learning.
-- Analyze multiple environmental risk factors.
-- Classify flood risk into different categories.
-- Provide safety recommendations based on prediction.
-- Demonstrate the application of AI in disaster management.
-```
-
----
-
-#### 💡 Advantages
-
-```markdown
-## 💡 Advantages
-
-- Fast and accurate flood prediction.
-- User-friendly web interface.
-- Supports disaster preparedness.
-- Easy deployment using Flask and Render.
-- Educational demonstration of Machine Learning.
-```
-
----
-
-#### ⚠️ Limitations
-
-```markdown
-## ⚠️ Limitations
-
-- Prediction accuracy depends on the quality of training data.
-- Does not use real-time weather information.
-- Intended for educational purposes only.
-- Should not replace official flood warning systems.
-```
-
----
-
-#### 🤝 Contributing
-
-```markdown
-## 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository.
-2. Create a new branch.
-3. Commit your changes.
-4. Push the branch.
-5. Open a Pull Request.
-```
-
----
-
-### 📷 Fix the Screenshot Section
-
-Instead of:
-
-```markdown
-(<img ... />)
-```
-
-Use:
-
-```markdown
-### 🏠 Home Page
-
-<img width="1877" alt="Home Page" src="YOUR_IMAGE_LINK">
-
-### 📋 Prediction Form
-
-<img width="1748" alt="Prediction Form" src="YOUR_IMAGE_LINK">
-
-### 📊 Prediction Result
-
-<img width="1860" alt="Prediction Result" src="YOUR_IMAGE_LINK">
-```
-
-or Markdown syntax:
-
-```markdown
-![Home Page](image-link)
-```
-
-The extra parentheses `(` `)` around the `<img>` tags are unnecessary.
-
----
-
-### 📧 Add Contact Information
-
-```markdown
-## 📬 Contact
-
-**Hemadri Divyasree**
-
-- LinkedIn: https://www.linkedin.com/in/divya-sree-hemadri-a5988732a
-- GitHub: https://github.com/Divyasree2607
-```
-
----
-
-## ⭐ Overall Rating
-
-Your README already contains:
-
-* ✅ Live Demo
-* ✅ Project Overview
-* ✅ Features
-* ✅ Technologies Used
-* ✅ Project Structure
-* ✅ Input Parameters
-* ✅ Prediction Output
-* ✅ Screenshots
-* ✅ Installation Guide
-* ✅ Future Improvements
-* ✅ Developer Information
-* ✅ License
-
-I would rate it **9.5/10**. Adding the sections above and fixing the screenshots would make it a **10/10 professional GitHub README**, suitable for internships, college projects, and your portfolio.
+This project is developed for educational and academic purposes as part of the **Smart Bridge Program**.
